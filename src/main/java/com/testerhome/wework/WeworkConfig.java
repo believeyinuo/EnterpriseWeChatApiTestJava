@@ -1,3 +1,5 @@
+package com.testerhome.wework;
+
 public class WeworkConfig {
 
     public String agentId = "100005";
@@ -11,5 +13,9 @@ public class WeworkConfig {
             weworkConfig = new WeworkConfig();
         }
         return weworkConfig;
+    }
+
+    public static void load(String path) {
+        //todo: read from yaml or json
     }
 }
